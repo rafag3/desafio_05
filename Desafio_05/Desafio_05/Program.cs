@@ -23,10 +23,10 @@ class Program
         // Gravar dados CSV
         using (StreamWriter writer = new StreamWriter("alunos.csv"))
         {
-            writer.WriteLine("Nome,Idade,Nota");
+            writer.WriteLine("Nome;Idade;Nota");
             foreach (Aluno aluno in alunos)
             {
-                writer.WriteLine("{0},{1},{2}", aluno.Nome, aluno.Idade, aluno.Nota);
+                writer.WriteLine("{0};{1};{2}", aluno.Nome, aluno.Idade, aluno.Nota);
             }
         }
 
@@ -34,7 +34,7 @@ class Program
         Console.WriteLine("Nome - Idade - Nota");
         foreach (Aluno aluno in alunos)
         {
-            Console.WriteLine("{0}, - {1}, - {2} - ", aluno.Nome, aluno.Idade, aluno.Nota);
+            Console.WriteLine("{0} - {1} - {2} ", aluno.Nome, aluno.Idade, aluno.Nota);
         }
     }
 }

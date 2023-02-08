@@ -1,4 +1,4 @@
-Nome,Idade,Nota
-João,18,9,5
-Maria,19,8
-Pedro,20,7,5
+Nome;Idade;Nota
+João;18;9,5
+Maria;19;8
+Pedro;20;7,5
